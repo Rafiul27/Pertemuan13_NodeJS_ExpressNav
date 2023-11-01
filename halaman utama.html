@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Playfair+Display&family=Playpen+Sans&display=swap" rel="stylesheet">
+    <title>Halaman Utama</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        font-family: 'Montserrat' ,cursive;
+      }
+
+      nav .logo{
+        font-family: 'Playpen Sans', cursive;
+        letter-spacing: 3px;
+      }
+      /* navbar */
+      nav{
+        display: flex;
+        background-color: rgb(114, 232, 63);
+        justify-content: space-around;
+        height: 50px;
+        align-items: center;
+        color: rgb(234, 192, 255);
+      }
+      nav ul{
+        display: flex;
+        list-style: none;
+        width: 30%;
+        justify-content: space-between;
+      }
+
+      nav ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 0.9em;
+      }
+      nav ul li a:hover{
+        color: rgb(250, 240, 255);
+      }
+      h1, p {
+        font-family: cursive;
+        text-align: center;
+        margin: 20px;
+      }
+      /* Media query untuk layar berukuran kecil (misalnya ponsel) */
+      @media screen and (max-width: 768px) {
+        nav ul{
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        nav ul{
+          display: none;
+        }
+      }
+
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <h4 style="color: black;">Rafi'ul Huda</h4>
+      </div>
+
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Halo, ini adalah halaman utama!</h1>
+    <p>Saat ini Saya sedang Mengikuti coding Training backend di sinarmas land</p>
+</body>
+</html>
